@@ -87,3 +87,8 @@ img + p:before {
 img + p>span:after {
 	content: " - ";
 }
+
+img {
+	margin: auto;
+	display: block;
+}
