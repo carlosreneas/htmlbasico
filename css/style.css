@@ -26,6 +26,43 @@ footer {
 }
 
 
+/* Estilos de la barra de navegación */
+
+nav {
+	height: 44px;
+	background-color: orange;
+}
+
+nav>ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+nav>ul>li {
+	float: left;
+}
+
+
+nav>ul>li>a {
+	padding: 12px;
+	color: blue;
+	text-decoration: none;
+	display: block;
+	background-color: orange;
+
+}
+
+nav>ul>li>a:hover {
+
+	border-left: 5px solid #000;
+	text-shadow: 1px 2px 1px #000;
+
+}
+
+
+/* Modificadores de texto */
+
 #idea {
 	color: white;
 }
@@ -39,6 +76,57 @@ footer {
 	color: blue;
 }
 
+img {
+	border-radius: 20px;
+	margin: auto;
+	display: block;
+}
 
+img:hover {
+	transform: rotate(90deg);
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out; 
+}
+
+
+img + p {
+	font-size: 0.8em;
+	color: #333;
+	font-style: italic;
+	margin-top: 0px;
+	
+}
+
+img + p:before {
+	content: "Imagen ";
+}
+
+img + p>span:after {
+	content: " - ";
+}
+
+img + p>span:before {
+	content: "#";
+}
+
+img:hover + p {
+	color: red;
+}
+
+/*
+.piedeimagen {
+	font-size: 0.8em;
+	color: #333;
+	font-style: italic;
+	margin-top: 0px;
+}
+*/
+
+
+a[href="#"] {
+	background-color: gray;
+	display: none;
+}
 
 
