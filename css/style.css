@@ -24,6 +24,20 @@ footer {
 	background-color: black;
 	color: #fff;
 	text-align: center;
+	clear: both;
+}
+
+section {
+	width: 70%;
+	float: left;
+
+}
+
+aside {
+	background-color: blue;
+	width: 30%;
+	float: left;
+	border-radius: 20px 0px 0px 0px;
 }
 
 /* Menu principal de la pagina */
@@ -91,4 +105,34 @@ img + p>span:after {
 img {
 	margin: auto;
 	display: block;
+	width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+	header {
+		background-color: red;
+	}
+	section {
+		width: 100%;
+	}
+	aside {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	img {
+		display: none;
+	}
+
+	img + p {
+		display: none;
+	}
+
+	section {
+		width: 100%;
+	}
+	aside {
+		display: none;
+	}
 }
